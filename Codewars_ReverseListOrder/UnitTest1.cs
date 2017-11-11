@@ -19,7 +19,7 @@ namespace Codewars_ReverseListOrder
     {
         public static List<int> ReverseList(List<int> list)
         {
-            throw new System.NotImplementedException();
+            return list;
         }
     }
 }
