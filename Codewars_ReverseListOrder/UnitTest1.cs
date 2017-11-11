@@ -11,7 +11,7 @@ namespace Codewars_ReverseListOrder
         {
             var actual = Kata.ReverseList(new List<int> {1});
             var expected = new List<int> {1};
-            Assert.AreEqual(expected,actual);
+            CollectionAssert.AreEqual(expected,actual);
         }
     }
 
