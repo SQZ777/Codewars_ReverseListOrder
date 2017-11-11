@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -27,7 +28,9 @@ namespace Codewars_ReverseListOrder
     {
         public static List<int> ReverseList(List<int> list)
         {
-            return list;
+            var listArray = list.ToArray();
+            Array.Reverse(listArray);
+            return new List<int>(listArray);
         }
     }
 }
