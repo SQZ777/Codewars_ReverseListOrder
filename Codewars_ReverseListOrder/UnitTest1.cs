@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Codewars_ReverseListOrder
@@ -35,9 +37,10 @@ namespace Codewars_ReverseListOrder
     {
         public static List<int> ReverseList(List<int> list)
         {
-            var listArray = list.ToArray();
-            Array.Reverse(listArray);
-            return new List<int>(listArray);
+            //var listArray = list.ToArray();
+            //Array.Reverse(listArray);
+            //return new List<int>(listArray);
+            return Enumerable.Reverse(list).ToList();
         }
     }
 }
