@@ -22,6 +22,15 @@ namespace Codewars_ReverseListOrder
             var expected = new List<int> { 2, 1 };
             CollectionAssert.AreEqual(expected, actaul);
         }
+
+        [TestMethod]
+        public void Input_1_2_3_Should_Be_3_2_1()
+        {
+            var actual = Kata.ReverseList(new List<int>{1,2,3});
+            var expected = new List<int>{3,2,1};
+            CollectionAssert.AreEqual(expected,actual);
+        }
+
     }
 
     public class Kata
